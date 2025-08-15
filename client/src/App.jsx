@@ -12,6 +12,7 @@ import Layout from './pages/hotelOwner/Layout'
 import AddRoom from './pages/hotelOwner/AddRoom'
 import Dashboard from './pages/hotelOwner/Dashboard'
 import ListRoom from './pages/hotelOwner/ListRoom'
+import About from './pages/About'
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const  isOwnerPath=useLocation().pathname.includes("owner");
      <div className='min-h-[70vh]'>
      <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path='/about' element={<About/>}/>
         <Route path='/room' element={<AllRooms/>} />
         <Route path='/rooms/:id' element={<RoomDetails/>}></Route>
         <Route path='/My-Bookings' element={<MyBookings/>} />
